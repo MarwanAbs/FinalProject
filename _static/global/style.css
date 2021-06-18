@@ -1,0 +1,49 @@
+.radio-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    padding: 0;
+}
+
+.radio-list li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.confidence-txt{
+    margin-top:40px;
+}
+
+.scenario{
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: lightblue;
+}
+
+.answer{
+    padding-right:120px
+}
+
+.answer-input{
+    width:200px;
+}
+
+.hide{
+    opacity: 0;
+}
+
+.error-msg{
+    color: red;
+}
+
+.otree-timer {
+    display: none;
+}
+
+._otree-content{
+    text-align: right;
+}

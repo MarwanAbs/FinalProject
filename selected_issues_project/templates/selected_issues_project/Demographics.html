@@ -1,0 +1,48 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="utf-8">
+    <style>
+      h4,h1,#zero,#intro,#intro2,#intro3,#intro4{
+      text-align:right;
+      font-size: x-large;
+      }
+
+      body{
+      background-color: #b3d9ff;
+      }
+      table.right{
+        width: auto;
+        margin-right: 0px;
+        margin-left: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h4 style="text-align: right;">נא מלא את פרטיך</h4>
+<p style="text-align: right;">נזכיר כי פרטיך נשמרים בדיסקרטיות רבה&nbsp;</p>
+    <table class="right" >
+      <tr align="right">
+        <td>{% formfield player.age label="גיל:"%}</td>
+      </tr>
+      <tr align="right">
+        <td>{% formfield player.gender label="מגדר:" %}</td>
+      </tr>
+      <tr align="right">
+        <td>{% formfield player.residence label="מקום מגורים:" %}</td>
+      </tr>
+      <tr align="right">
+        <td> {% formfield player.years_of_education label="שנות השכלה:" %}</td>
+      </tr>
+      </table>
+            {% next_button %}
+        {% endblock %}
+
+  </body>
+</html>
